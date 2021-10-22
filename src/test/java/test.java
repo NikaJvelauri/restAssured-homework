@@ -9,11 +9,11 @@ import static org.hamcrest.Matchers.hasItems;
 
 public class test {
 
-    Response response = given().when().get("http://ergast.com/api/f1/2017/circuits.json").then().extract().response();
-    public String CircuitID1 = response.jsonPath().getString("MRData.CircuitTable.Circuits[1].circuitId");
-    public String CircuitID5 = response.jsonPath().getString("MRData.CircuitTable.Circuits[5].circuitId");
-    public String CountryName1 = response.jsonPath().getString("MRData.CircuitTable.Circuits[1].Location.country");
-    public String CountryName5 = response.jsonPath().getString("MRData.CircuitTable.Circuits[5].Location.country");
+//    Response response = given().when().get("http://ergast.com/api/f1/2017/circuits.json").then().extract().response();
+//    public String CircuitID1 = response.jsonPath().getString("MRData.CircuitTable.Circuits[1].circuitId");
+//    public String CircuitID5 = response.jsonPath().getString("MRData.CircuitTable.Circuits[5].circuitId");
+//    public String CountryName1 = response.jsonPath().getString("MRData.CircuitTable.Circuits[1].Location.country");
+//    public String CountryName5 = response.jsonPath().getString("MRData.CircuitTable.Circuits[5].Location.country");
 
 //    //  Use dataprovider for parametrization of circuitId and country
 //    @DataProvider(name = "DataProvider")
@@ -22,9 +22,7 @@ public class test {
 //                                {CircuitID5, CountryName5}};
 //    }
 
-    // ორი დათა პროვაიდერი მიწერია პირველის შემთხვევაში ცვლადებით გადავცემ მაღლა როგორცაა ნაჩვენები და მეორეს შემთხვეევაში კიდე
-    // ხელით გავუწერე პარამეტრები, რესტ აშურდში რა მაგალითებიც ვნახე დატაპროვაიდერზე არცერთგან ცვლადებით გადაცემული არ შემხვედრია
-    // ყველა სტრინგის სახით გადასცემდა და რავიცი ორივე დავწერე :დ class test-ში რო მიწერია ეს
+
 
 
     @DataProvider(name = "DataProvider")
