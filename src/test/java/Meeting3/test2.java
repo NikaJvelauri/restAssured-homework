@@ -1,11 +1,10 @@
 package Meeting3;
-import Registration.Create;
-import Registration.Failure;
-import Registration.Success;
+import OldMeeting3Task.Registration.Create;
+import OldMeeting3Task.Registration.Failure;
+import OldMeeting3Task.Registration.Success;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
-import io.restassured.specification.RequestSpecification;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -39,8 +38,6 @@ public class test2 {
 
 
         ResponseBody body = response.getBody();
-
-
 
         // Use the RegistrationSuccessResponse class instance to Assert the values of Response.
         // Deserialize the Response body into RegistrationSuccessResponse

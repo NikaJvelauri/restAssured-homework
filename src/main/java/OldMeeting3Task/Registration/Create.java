@@ -1,4 +1,4 @@
-package Registration;
+package OldMeeting3Task.Registration;
 
 public class Create {
     public String name ;
